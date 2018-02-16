@@ -1,10 +1,18 @@
+.carousel-container {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
 .carousel-wrapper {
   width: 720px;
-  height: 560px;
+  height: 400px;
   /* background: #c1c1c1; */
   float: left;
   overflow: hidden;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .carousel-wrapper .carousel {
@@ -23,6 +31,10 @@
   /* margin-left: -720px; */
 }
 
+.carousel-wrapper br {
+  display: none;
+}
+
 .slide img {
   width: 720px;
   height: 100%;
@@ -35,10 +47,13 @@
 }
 
 .carousel-thumbs{
-  /* display: block; */
-  padding-top: 10px;
+  display: block;
+  /* padding-top: 10px; */
   /* margin-top: 30px; */
   /* height: 100px; */
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .thumbs{
@@ -50,10 +65,15 @@
   /* height: 100%; */
 }
 
+.thumbs br {
+  display: none;
+}
+
 li.thumbnail{
   display: inline-block;
   margin: 0 auto;
   height: 66px;
+  transition: none !important;
 }
 
 li.thumbnail:hover{
@@ -74,6 +94,9 @@ a.arrow{
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   width: 60px;
+  z-index: 1;
+  cursor: pointer;
+  background-size: 75px;
 }
 
 #left{
